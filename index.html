@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vendors/css/fullpage.css" />
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <title>Tea Cozy</title>
+  </head>
+  <body>
+    <div id="fullpage">
+      <header>
+        <nav class="flex-container" id="nav">
+          <img
+            class="nav-logo"
+            src="./resources/img/img-tea-cozy-logo.png"
+            alt="Logo Of Tea Cozy"
+          />
+          <ul class="navigation">
+            <li><a class="navigation__link" href="#mission">Mission</a></li>
+            <li><a class="navigation__link" href="#">Featured Tea</a></li>
+            <li><a class="navigation__link" href="#">Locations</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="hero section section1">
+          <div class="container">
+            <div class="hero-text">
+              <h1>Tea Cozy</h1>
+              <a class="navigation__link" id="hero-link" href="#mission"
+                >Featured</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="mission" class="mission section section2">
+          <div class="container">
+            <div class="navi">
+              <nav class="flex-container" id="nav nav2">
+                <img
+                  class="nav-logo"
+                  src="./resources/img/img-tea-cozy-logo.png"
+                  alt="Logo Of Tea Cozy"
+                />
+                <ul class="navigation">
+                  <li>
+                    <a id="active-link" class="navigation__link" href="#mission"
+                      >Mission</a
+                    >
+                  </li>
+                  <li><a class="navigation__link" href="#">Featured Tea</a></li>
+                  <li><a class="navigation__link" href="#">Locations</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="relative">
+              <h2 class="heading-secondary adjust">Our Mission</h2>
+            </div>
+            <div class="flex-container cards">
+              <div class="card">
+                <ion-icon class="icon" name="cafe"></ion-icon>
+                <h3 class="heading-teritary">Handpicked</h3>
+                <p class="mission-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  beatae accusamus consequuntur tempora quibusdam velit
+                  explicabo ad vero cum quas.
+                </p>
+              </div>
+              <div class="card">
+                <ion-icon class="icon" name="color-palette"></ion-icon>
+                <h3 class="heading-teritary">Artisanally Curated</h3>
+                <p class="mission-desc">
+                  Lorem ipsum elit. fuga autem, tempora quibusdam velit
+                  explicabo ad odio iusto nulla aliquid doloribus vero cum quas.
+                </p>
+              </div>
+              <div class="card">
+                <ion-icon class="icon" name="earth"></ion-icon>
+                <h3 class="heading-teritary">Free Range</h3>
+                <p class="mission-desc">
+                  Lorem ipsum sit amet conecadipisicing elit. Ipsa beatae
+                  accusamus caecati consequutur tepora quibusdam velit explicabo
+                  ad odio iusto .
+                </p>
+              </div>
+              <div class="card">
+                <ion-icon class="icon" name="pulse"></ion-icon>
+                <h3 class="heading-teritary">Sustainable</h3>
+                <p class="mission-desc">
+                  Lorem ipsum dolor sit amet beatae accusamus obcaecati fuga
+                  autem, doloremque corrupti consequuntur tempora quibusdam
+                  velit explicabo ad odio quas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendors/js/fullpage.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#fullpage").fullpage({
+          //options here
+          autoScrolling: true,
+          scrollHorizontally: true,
+        });
+      });
+    </script>
+  </body>
+</html>
